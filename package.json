@@ -1,0 +1,32 @@
+{
+  "name": "pc-web-front",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "auto-build": "inotifyd /auto-build.sh $(find /app -type d) &",
+    "preview": "vite preview --port 5050",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-brands-svg-icons": "^6.1.2",
+    "@fortawesome/free-regular-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/vue-fontawesome": "^3.0.1",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.2",
+    "@vitejs/plugin-vue-jsx": "^1.3.7",
+    "eslint": "^8.5.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "vite": "^2.8.4",
+    "vue-hot-reload-api": "^2.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pci-ua/pci-website.git"
+  }
+}

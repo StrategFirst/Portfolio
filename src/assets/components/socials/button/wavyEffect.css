@@ -1,0 +1,43 @@
+
+.social-button:hover {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .social-button:hover::after, .social-button:hover::before {
+    position: absolute;
+    content: ' ';
+    width: 18rem;
+    height: 18rem;
+    background-color: red;
+    border-radius: 38%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: linear 1s infinite wave;
+  }
+  .social-button:hover::after {
+    top: -8rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    animation-duration:  8s;
+    animation-delay: -1s;
+  }
+  .social-button:hover::before {
+    top: -8rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation-duration:  12s;
+  }
+  
+  @keyframes wave {
+    from {
+      transform: translate(-50%,-50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%,-50%) rotate(360deg);
+    }
+  }
+  
+  .social-button :is(span,.social-button-icon) {
+    position: relative;
+    z-index: 50;
+  }

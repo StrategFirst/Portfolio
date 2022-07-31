@@ -1,0 +1,49 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Ubuntu:wght@500&display=swap');
+/* 
+/* Config */
+:root {
+	--color-primary: #3aea57;
+	--color-secondary: #0f1011;
+
+	--font-primary: 'JetBrains Mono', monospace;;
+	--font-secondary: 'Ubuntu', sans-serif;
+}
+
+/* Reset default navigator style */
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+
+
+/* Setup default style */
+html {
+	font-family: var(--color-secondary);
+	background-color: var(--color-secondary);
+	color: var(--color-primary);
+
+
+
+}
+
+/* Scrollbar : */
+/* Scrollbar-Firefox : */
+html {
+	scrollbar-color: var(--color-primary) transparent;
+	scrollbar-width: thin;
+}
+
+/* Scrollbar-Chrome : */
+html::-webkit-scrollbar {
+	width: 8px;
+}
+html::-webkit-scrollbar-thumb {
+	background: var(--color-primary);
+	border-radius: 3px;
+}
+html::-webkit-scrollbar-track {
+	background: transparent;
+}
